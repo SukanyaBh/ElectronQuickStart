@@ -1,0 +1,29 @@
+{
+  "productName": "quickstart",
+  "directories": {
+    "output": "release/"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "icon.ico"
+  ],
+  "win": {
+    "icon": "/dist/assets/icons/icon.png",
+    "target": [
+      "msi"
+    ]
+  },
+  "mac": {
+    "icon": "/dist/assets/icons/icon.png",
+    "target": [
+      "dmg"
+    ]
+  },
+  "linux": {
+    "icon": "/dist/assets/icons/icon.png",
+    "target": [
+      "AppImage"
+    ]
+  }
+}

@@ -4,6 +4,7 @@ const { autoUpdater } = require('electron-updater');
 let mainWindow;
 
 function createWindow () {
+  debugger;
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -40,9 +41,11 @@ ipcMain.on('app_version', (event) => {
 });
 
 autoUpdater.on('update-available', () => {
+  debugger;
   mainWindow.webContents.send('update_available');
 });
 autoUpdater.on('update-downloaded', () => {
+  debugger;
   mainWindow.webContents.send('update_downloaded');
 });
 ipcMain.on('restart_app', () => {
