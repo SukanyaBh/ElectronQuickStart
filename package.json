@@ -4,9 +4,12 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder build --windows --publish never",
+    "deploy": "electron-builder build --windows --publish always"
   },
-  "repository": "https://github.com/SukanyaBh/ElectronQuickStart.git","build": {
+  "repository": "https://github.com/SukanyaBh/ElectronQuickStart.git",
+  "build": {
     "appId": "com.example.ElectronQuichstart",
     "publish": [
       {
