@@ -1,0 +1,6 @@
+appId: com.example.ElectronAutoUpdate
+publish:
+  provider: github
+  token: [0cc64183bcd11ec2641eaa6e62c5bc44417004af]
+  "build": "electron-builder build --mac --win --publish never",
+"deploy": "electron-builder build --mac --win --publish always"
